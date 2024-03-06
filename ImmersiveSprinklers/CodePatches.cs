@@ -346,6 +346,7 @@ namespace ImmersiveSprinklers
                 int which = GetMouseCorner();
                 if (ReturnSprinkler(Game1.player, location, Game1.currentCursorTile, which))
                 {
+                    SMonitor.Log($"Sprinker at {x},{y]:{which} picked up by Pickaxe");
                     location.playSound("hammer");
                     return false;
                 }
