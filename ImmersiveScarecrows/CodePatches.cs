@@ -306,7 +306,7 @@ namespace ImmersiveScarecrows
         {
             public static bool Prefix(GameLocation location, int x, int y, int power, Farmer who)
             {
-                if (!Config.EnableMod)
+                if (!Config.EnableMod || !Config.PickupWithPickaxe)
                     return true;
                 Vector2 placementTile = new Vector2(x, y);
                 int which = GetMouseCorner();

@@ -7,6 +7,7 @@ namespace ImmersiveSprinklers
     public class ModConfig
     {
         public bool EnableMod { get; set; } = true;
+        public bool PickupWithPickaxe { get; set; } = true;
         public bool Debug { get; set; } = false;
         public bool ShowRangeWhenPlacing { get; set; } = true;
         public float Scale { get; set; } = 4;

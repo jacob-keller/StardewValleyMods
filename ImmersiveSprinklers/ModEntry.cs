@@ -170,6 +170,13 @@ namespace ImmersiveSprinklers
 
             configMenu.AddBoolOption(
                 mod: ModManifest,
+                name: () => "Pickup With Pickaxe",
+                getValue: () => Config.PickupWithPickaxe,
+                setValue: value => Config.PickupWithPickaxe = value
+            );
+
+            configMenu.AddBoolOption(
+                mod: ModManifest,
                 name: () => "Show Range When Placing",
                 getValue: () => Config.ShowRangeWhenPlacing,
                 setValue: value => Config.ShowRangeWhenPlacing = value
