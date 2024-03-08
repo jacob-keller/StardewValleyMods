@@ -312,7 +312,7 @@ namespace ImmersiveScarecrows
                 int which = GetMouseCorner();
                 if (ReturnScarecrow(Game1.player, location, Game1.currentCursorTile, which))
                 {
-                    SMonitor.Log($"Scarecrow at {x},{y]:{which} picked up by Pickaxe");
+                    SMonitor.Log($"Scarecrow at {x},{y}:{which} picked up by Pickaxe");
                     location.playSound("axechop");
                     return false;
                 }

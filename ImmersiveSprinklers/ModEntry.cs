@@ -120,7 +120,7 @@ namespace ImmersiveSprinklers
                 int which = GetMouseCorner();
                 if (ReturnSprinkler(Game1.player, Game1.currentLocation, Game1.currentCursorTile, which))
                 {
-                    SMonitor.Log($"Sprinker at {x},{y]:{which} picked up by hotkey");
+                    SMonitor.Log($"Sprinker at {Game1.currentCursorTile.Y},{Game1.currentCursorTile.Y}:{which} picked up by hotkey");
                     Helper.Input.Suppress(e.Button);
                 }
             }

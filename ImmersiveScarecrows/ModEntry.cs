@@ -114,7 +114,7 @@ namespace ImmersiveScarecrows
                 int which = GetMouseCorner();
                 if (ReturnScarecrow(Game1.player, Game1.currentLocation, Game1.currentCursorTile, which))
                 {
-                    SMonitor.Log($"Scarecrow at {x},{y]:{which} picked up by hotkey");
+                    SMonitor.Log($"Scarecrow at {Game1.currentCursorTile.X},{Game1.currentCursorTile.Y}:{which} picked up by hotkey");
                     Helper.Input.Suppress(e.Button);
                 }
             }
